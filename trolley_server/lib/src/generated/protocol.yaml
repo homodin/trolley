@@ -1,0 +1,28 @@
+movements:
+  - getStillagePosition:
+  - acceptStillage:
+  - listStillageStatus:
+operatorControl:
+  - createOperator:
+  - getOperator:
+  - updateOperator:
+  - deleteOperator:
+  - listOperators:
+partNumbers:
+  - getAll:
+  - getById:
+  - create:
+  - update:
+  - delete:
+stillageContent:
+  - loadParts:
+stillageMaster:
+  - RegisterNewStillage:
+  - deleteStillage:
+  - listStillages:
+warehouses:
+  - createWarehouse:
+  - getWarehouses:
+  - getWarehouseById:
+  - updateWarehouse:
+  - deleteWarehouse:

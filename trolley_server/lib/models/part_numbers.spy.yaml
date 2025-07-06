@@ -1,0 +1,7 @@
+class: PartNumber
+table: part_number
+fields:
+    partNumber: String
+    description: String
+    commonDescription: String
+    pathToPic: String

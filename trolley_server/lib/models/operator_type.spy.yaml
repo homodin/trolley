@@ -1,0 +1,10 @@
+enum: OperatorType
+serialized: byName
+values:
+- Engineer
+- Operator
+- TeamLeader
+- Supervisor
+- Quality
+- Maintenance
+- Manager

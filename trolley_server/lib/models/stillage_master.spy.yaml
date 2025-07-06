@@ -1,0 +1,4 @@
+class: StillageMaster
+table: stillage_master
+fields:
+    stillageNumber: String 

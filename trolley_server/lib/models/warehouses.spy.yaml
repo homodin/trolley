@@ -1,0 +1,5 @@
+class: Warehouses
+table: warehouses
+fields:
+    warehouse: String
+    defaultNext: String

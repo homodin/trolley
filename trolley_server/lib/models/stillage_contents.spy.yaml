@@ -1,0 +1,10 @@
+class: Contents
+table: contents
+fields:
+    contentId: String
+    partNumber: String
+    quantity: int
+    employeeName: String
+    transactionDatetime: DateTime
+    contentType: ContentType
+    reason: String

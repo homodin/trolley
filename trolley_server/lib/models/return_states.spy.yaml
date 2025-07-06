@@ -1,0 +1,10 @@
+enum: ReturnStates
+serialized: byName
+values:
+- Success
+- ItemAlreadyExists
+- ActionNotAllowed
+- ItemNotFound
+- Deleted
+- Updated
+- Error

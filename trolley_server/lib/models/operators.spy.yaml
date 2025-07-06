@@ -1,0 +1,7 @@
+class: Operators
+table: operator
+fields:
+    name: String
+    opType: OperatorType
+    clockNumber: String
+    password: String

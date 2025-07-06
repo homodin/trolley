@@ -1,0 +1,7 @@
+enum: TransactionType
+serialized: byName
+values:
+- Loading
+- Unloading
+- Transfer
+- Rejection

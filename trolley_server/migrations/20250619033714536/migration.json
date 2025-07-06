@@ -1,0 +1,138 @@
+{
+  "actions": [
+    {
+      "type": "deleteTable",
+      "deleteTable": "transfer_log"
+    },
+    {
+      "type": "createTable",
+      "createTable": {
+        "name": "transfer_log",
+        "dartName": "TransferLog",
+        "module": "trolley",
+        "schema": "public",
+        "columns": [
+          {
+            "name": "id",
+            "columnType": 6,
+            "isNullable": false,
+            "columnDefault": "nextval('transfer_log_id_seq'::regclass)",
+            "dartType": "int?"
+          },
+          {
+            "name": "stillageNumber",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "sourceWarehouse",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "targetWarehouse",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "transactionType",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "protocol:TransactionType"
+          },
+          {
+            "name": "contentId",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "employeeName",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "transactionDatetime",
+            "columnType": 4,
+            "isNullable": false,
+            "dartType": "DateTime"
+          },
+          {
+            "name": "overrideAuth",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "overrided",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "overrideCode",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "hookInGoodCondition",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "floorMeshInGoodCondition",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "stillageIsInGeneralGoodCondition",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "String"
+          },
+          {
+            "name": "remainingCycles",
+            "columnType": 6,
+            "isNullable": false,
+            "dartType": "int"
+          }
+        ],
+        "foreignKeys": [],
+        "indexes": [
+          {
+            "indexName": "transfer_log_pkey",
+            "elements": [
+              {
+                "type": 0,
+                "definition": "id"
+              }
+            ],
+            "type": "btree",
+            "isUnique": true,
+            "isPrimary": true
+          }
+        ],
+        "managed": true
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "type": "tableDropped",
+      "message": "One or more columns are added to table \"transfer_log\" which cannot be added in a table migration. The complete table will be deleted and recreated.",
+      "table": "transfer_log",
+      "columns": [
+        "remainingCycles"
+      ],
+      "destrucive": true
+    }
+  ],
+  "migrationApiVersion": 1
+}

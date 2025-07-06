@@ -1,0 +1,17 @@
+class: TransferLog
+table: transfer_log
+fields:
+    stillageNumber: String
+    sourceWarehouse: String
+    targetWarehouse: String
+    transactionType: TransactionType
+    contentId: String
+    employeeName: String
+    transactionDatetime: DateTime
+    overrideAuth: String
+    overrided: String
+    overrideCode: String
+    hookInGoodCondition: String
+    floorMeshInGoodCondition: String
+    stillageIsInGeneralGoodCondition: String
+    remainingCycles: int
