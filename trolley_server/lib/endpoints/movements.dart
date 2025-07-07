@@ -14,8 +14,8 @@ class MovementsEndpoint extends Endpoint {
 
   MovementsEndpoint() {
     Map env = Platform.environment;
-    password = env["EMAIL_PASSWORD"];
-    email = env["EMAIL_EMAIL"];
+    password = env["W_PSSWD"];
+    email = env["W_EMAIL"];
     mailServer = hotmail(email, password);
   }
   String stillageMovementEmailHtml = '''
@@ -48,7 +48,7 @@ class MovementsEndpoint extends Endpoint {
             transactionDatetime: DateTime.now().add(Duration(hours: 2))));
 
     try {
-      mailServer = hotmail(email, password);
+      mailServer = gmail(email, password);
 
       tempTransfer.toJson().entries.forEach((entry) {
         stillageMovementEmailHtml = stillageMovementEmailHtml.replaceAll(
@@ -57,6 +57,7 @@ class MovementsEndpoint extends Endpoint {
       Message message = Message();
       message.from = Address(email);
       message.recipients.add('pricillar@atdalliace.co.za');
+      message.recipients.add('kholofelol@atdalliace.co.za');
       message.html = stillageMovementEmailHtml;
       message.subject = 'Automated: Stillage Tracker';
       await send(message, mailServer!);
